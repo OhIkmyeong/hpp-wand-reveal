@@ -15,8 +15,7 @@ export class Wand{
         const {clientX,clientY} = e;
         // this.$wand.style.transform = `translate(${clientX - (this.width / 2)}px, ${clientY}px)`;
         const per = clientX / this.winWid;
-        const deg = (per * 20) - 10; //-10 ~ 10이라 20 곱하고 -10 뺀거임
-        // const wandX = (this.winWid * -0.15) + clientX * 1.3;
+        const deg = (per * 50) - 25; //-10 ~ 10이라 20 곱하고 -10 뺀거임
         const wandX =(this.winWid * -0.15) + clientX * 1.3;
         console.log(wandX);
         const wandY = (this.winHei * 0.1) + clientY * 0.4;

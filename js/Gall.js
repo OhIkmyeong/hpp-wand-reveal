@@ -12,7 +12,7 @@ export class Gall{
 
     toggle_reveal(e){
         const {clientX,clientY} = e;
-        const wandX = (window.innerWidth * -0.15) + clientX * 1.3;
+        const wandX = (window.innerWidth * -0.5) + clientX * 2.0;
 
         this.$$item.forEach($item=>{
             const $img = $item.querySelector('.gall-item-photo');
