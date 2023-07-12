@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+*{margin:0;padding:0;box-sizing:border-box;}
+
+#wrapper{
+    display:flex;flex-flow:column nowrap;
+    justify-content:center; align-items:center;
+    gap:20px;
+    position:relative; overflow:hidden;
+    width:100%;height:100vh;
+    background:#21202b;
+}
+
+a{color:#fff; text-decoration:none;}

@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+#gall{
+    display:flex;flex-flow:row-reverse nowrap;
+    justify-content:center;align-items:center;
+    position:relative;
+    width:100%;
+    padding:20px;
+}
+
+.gall-item{
+    position:relative; overflow:hidden;
+    width:40vmin; aspect-ratio:1/1;
+    background: #1f2542;
+    border:1px solid #ffffff23; border-radius:4vmin;
+    box-shadow:10px 10px 5vmin 2vmin rgba(0,0,0,.5);
+    transform-origin: center bottom;
+}
+.gall-item:nth-child(1){
+    transform:translate(-40px, 30px) rotate(15deg);
+}
+.gall-item:nth-child(3){
+    transform:translate(70px, 30px) rotate(-15deg);
+}
+.gall-item::before{
+    content:'';display:block;position:absolute;
+    top:50%;left:50%;transform:translate(-50%,-50%);
+    width:35%; aspect-ratio:1/1;
+    background:url(./../img/thumb.svg) no-repeat center center / cover;
+    opacity:.1;
+}
+
+.gall-item-photo{
+    position:relative;
+    width:100%;height:100%;
+    object-fit:cover;
+    opacity:var(--opacity);
+    filter:blur(var(--blur));
+    transition:opacity .3s ,filter 1s;
+}
